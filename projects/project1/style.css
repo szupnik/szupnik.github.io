@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+  }
+  
+  main {
+    position: relative;
+  }
+  
+  .grid-2 {
+    display: flex;
+  }
+  
+  .grid-2 .pothos-bg {
+    background-image: url("photos/pothos.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .grid-2 .home-bg{
+      background-image: url("photos/plantroom.jpg");
+      background-size: cover;
+      height: 100vh;
+  }
+
+  .grid-2 .peacelily-bg{
+    background-image: url("photos/peacelily.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.grid-2 .rubbertree-bg{
+    background-image: url("photos/rubbertree.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.grid-2 .zzplant-bg{
+    background-image: url("photos/zzplant.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+  .grid-2 div {
+    flex: 1;
+  }
+
+  .descrip p{
+      width: 65%;
+      font-size: 20px;
+      margin: 0 auto;  
+      padding-top: 20px;
+  }
+  
+.carsheet div{
+    margin: 0 auto;
+}
+
+  nav{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 40px;
+  }
+  
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover{
+      color: yellow;
+      text-decoration: none;
+  }
+
+  nav .homenav{
+    left: 70px;
+    bottom: 20px;
+    font-size: 40px;
+    text-align: left;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  
+  .logo-img {
+    border-radius: 50%;
+    max-width: 75px;
+    background-color: white;
+    height: auto;
+  }
+
+  h1{
+      font-size: 80px;
+      color: white;
+      margin-top: 10px;
+  }
+  
+  div .caresheet{
+      background-color: lightcoral;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 10%;
+      padding: 12px 20px;
+  }
+  div .caresheet h3{
+      font-size: 30px;
+      padding: 0;
+      margin: 0;
+  }
+
+  div .caresheet p{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
