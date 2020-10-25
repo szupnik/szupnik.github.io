@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 4</title>
+</head>
+<body>
+    <h1>Homework 4</h1>
+    <form action="https://getsimpleform.com/messages?form_api_token=598aa1ed77fb0fba1c0e6936246d86f2" method="post">
+        <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+        <input type='hidden' name='redirect_to' value='/thankyou.html' />
+        <!-- all your input fields here.... -->
+        <p>Name:<input type='text' name='test' /> 
+        <p>Favorite Color: </br> 
+            <input type="radio" name="color" value="red"> Red
+            <input type="radio" name="color" value="not red"> My favorite color isn't red.
+         </p>
+        <p>If your favorite color isn't red, why?</p>
+        <textarea name="explanation" cols="20" rows="5">Explain yourself...</textarea>
+    </p>
+    <p>Email: <input type="text" name="email"></p>
+
+        <input type='submit' value='Submit!' />
+   
+      </form>
+</body>
+</html>
