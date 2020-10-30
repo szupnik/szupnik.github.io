@@ -1,17 +1,21 @@
 /* -------------------------------------- *
 General Styles
 * --------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono');
+
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Mono", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
 }
 
 h1,
 h2,
 h3 {
-  font-size: 36px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 60px;
+  font-family: 'Space Mono', "cursive";
+  font-style:italic;
+  
 }
 main,
 header h1,
@@ -21,6 +25,8 @@ nav div {
 }
 header {
   padding: 40px 0;
+  background-image: url(/szupnik.github.io/images/spill.jpg);
+  background-size: cover;
 }
 nav a {
   padding-right: 20px;
@@ -32,3 +38,4 @@ nav {
   background-color: #ccc;
   padding: 12px;
 }
+
