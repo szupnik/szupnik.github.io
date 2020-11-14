@@ -2,6 +2,12 @@ body {
     background-color: #F3EAC2;
 }
 
+@media screen and (max-width: 640px) {
+    .mobilehide {
+        display: none;
+    }
+}
+
 h1, h2, h3 {
     font-family: juniper-std,sans-serif;
     font-weight: 400;
@@ -10,6 +16,8 @@ h1, h2, h3 {
 
 h2 {
     font-size: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #062031;
 }
 
 h3 {
@@ -20,24 +28,50 @@ p {
     font-family: futura-pt,serif;
 font-weight: 400;
 font-style: normal;
+color: #062031;
+font-size: 17px;
+}
+
+.homepage {
+    display: flex;
+}
+
+.homepage img {
+    width: 40%;
+    height: auto;
+    object-fit: contain;
 }
 
 .homelogo {
-    margin-left: 60%;
-    margin-right: 5%;
-    padding-bottom: 100px;
+    font-size: 55px;
+    margin-left: 5%;
     padding-top: 250px;
-    font-size: 75px; 
+    padding-bottom: 50px;
+    line-height: 35px;
 }
+
+.botanicals {
+    font-family: futura-pt; 
+    font-weight: 300; 
+    font-size: 35px;
+    padding-left: 5px;
+}
+
 
 .products {
     margin-left: 5%;
+    padding-bottom: 50px;
+}
+
+.products h2 {
+    color: #9AD3BC;
+
 }
 
 .blobs {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
+
 
 .inblob img{
     max-width: 55%;
@@ -45,17 +79,52 @@ font-style: normal;
     padding: 0;
 }
 
-.about {
+.about h2{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #FEA36C;
+
+}
+
+.about, .membership {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+}
+
+
+.membership h2 {
+    color: #EC524B;
+    text-align: center;
+    padding-bottom: none;
+    margin-bottom: 0;
+}
+
+.membershiptext {
     display: flex;
-    margin-left: 5%;
-    padding-bottom: 100px;
-} 
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding-top: 0;
+}
 
+button {
+    background-color: #EC524B;
+    border: 3px solid #062031;
+    font-size: 34px;
+    width: 65%;
+    padding-top: 10px;
+    border-radius: 50px;
+    font-family: juniper-std, sans-serif;
+    color: white;
+    font-size: 50px;
+}
 
-.membership {
-    margin-left: 60%;
-    margin-right: 5%;
-    padding-bottom: 100px;
+button:hover {
+    background-color:#FEA36C;
+    color: #EC524B;
+   
 }
 
 footer {
@@ -63,17 +132,20 @@ footer {
     background-color: #062031;
     color: white;
     justify-content: flex-end;
-    padding: 0;
+    box-shadow: 0 50vh 0 50vh #062031;
     
+}
+
+footer p {
+    color: white;
 }
 
 .footerinfo{
     width: 150 px;
-    padding-right: 40px;
+    padding-right: 10px;
     padding-left: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
-    
 }
 
 .footerlogo{
@@ -81,5 +153,109 @@ footer {
     text-align: left;
     width: 50px;
     height: 50 px;
-    padding-left: 60px;
+    padding-left: 5%;
+    padding-top: 20px;
+}
+
+
+
+
+/* code for desktop */ 
+
+@media screen and (min-width: 1024px) {
+
+    h2 {
+        font-size: 60px;
+    }
+
+    .homelogo {
+        margin-right: 5%;
+        margin-left: 20%;
+        padding-bottom: 100px;
+        padding-top: 250px;
+        font-size: 75px;
+        line-height: 45px;
+    }
+    
+    .botanicals {
+        font-family: futura-pt; 
+        font-weight: 300; 
+        font-size: 47px;
+        padding-left: 10px;
+    }
+    .homepage {
+        justify-content: flex-end; 
+    }
+    .blobs {
+        display: flex;
+        justify-content: space-between;
+    }
+    .about {
+        display: flex;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        padding-right: 80px;
+    } 
+
+    .about img {
+        width: 500px;
+        height: auto;
+        object-fit: contain;
+        padding-right: 40px;
+        margin-left: 40px;
+        margin-top: 80px;
+    }
+
+    .about h2 {
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 20px;
+
+    }
+
+    .membership {
+        margin-right: 5%;
+        padding-bottom: 100px;
+        padding-right: 0px;
+        padding-left: 40px;
+    }
+
+    .membership h2 {
+        text-align: right;
+        padding-right: 50px;
+
+    }
+   
+    .membershiptext {
+        width: 40vw;
+        padding-left: 120px;
+    }
+
+    .membershipcontent {
+        display: flex;
+        margin-right:0;
+    }
+
+    .membershipcontent img {
+        width: 50%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .footerinfo{
+        width: 150 px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+
+    .footerlogo {
+        padding-top: 8px;
+    }
+ 
 }
