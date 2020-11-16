@@ -1,11 +1,22 @@
+*{ box-sizing: border-box;}
 body {
     background-color: #F3EAC2;
 }
+img { width: 100%; }
+svg { width: 100%; }
+.roots {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    right:100px;
+    z-index:-1;
+}
 
-@media screen and (max-width: 640px) {
-    .mobilehide {
+.mobilehide {
         display: none;
     }
+@media screen and (max-width: 640px) {
+    
 }
 
 h1, h2, h3 {
@@ -34,6 +45,7 @@ font-size: 17px;
 
 .homepage {
     display: flex;
+    z-index: 1;
 }
 
 .homepage img {
@@ -61,6 +73,8 @@ font-size: 17px;
 .products {
     margin-left: 5%;
     padding-bottom: 50px;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .products h2 {
@@ -70,6 +84,8 @@ font-size: 17px;
 
 .blobs {
     text-align: center;
+    width:75%;
+    margin:auto;
 }
 
 
@@ -77,6 +93,15 @@ font-size: 17px;
     max-width: 55%;
     margin: 0;
     padding: 0;
+}
+
+.inblob:nth-child(odd) {
+    margin-left: -200px;
+    margin-top: -20px;
+}
+.inblob:nth-child(even) {
+    margin-right: -180px;
+    margin-top: -80px;
 }
 
 .about h2{
@@ -129,9 +154,9 @@ button:hover {
 
 footer {
     display: flex;
+    flex-direction: column;
     background-color: #062031;
     color: white;
-    justify-content: flex-end;
     box-shadow: 0 50vh 0 50vh #062031;
     
 }
@@ -141,20 +166,17 @@ footer p {
 }
 
 .footerinfo{
-    width: 150 px;
+    min-width: 150px;
     padding-right: 10px;
     padding-left: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
+    flex:1;
 }
 
 .footerlogo{
-    position: absolute;
-    text-align: left;
-    width: 50px;
-    height: 50 px;
-    padding-left: 5%;
-    padding-top: 20px;
+    max-width: 150px;
+    align-self: center;
 }
 
 
@@ -163,7 +185,12 @@ footer p {
 /* code for desktop */ 
 
 @media screen and (min-width: 1024px) {
-
+    footer {
+        flex-direction: row;
+    }
+.mobilehide {
+        display: block;
+    }
     h2 {
         font-size: 60px;
     }
