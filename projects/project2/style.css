@@ -1,4 +1,9 @@
 *{ box-sizing: border-box;}
+
+html {
+    scroll-behavior: smooth;
+  }
+
 /* START of Mobile Menu */
 .nav, .desktop {
     display: block;
@@ -88,14 +93,46 @@
 .menu-mobile a {
     clear: right;
     text-decoration: none;
-    color: #333;
+    color: #F3EAC2;
     height: 70px;
     line-height: 70px;
     padding: 60px;
 }
 
+.menu-mobile .mproduct{
+    background-color: #9AD3BC;
+}
+
+.menu-mobile .mabout {
+    background-color:#FEA36C;
+}
+
+.menu-mobile .mmembership {
+    background-color: #EC524B;
+}
+
+.menu-mobile .mhome {
+    background-color:#062031;
+}
+
 .menu-mobile a:hover {
-    color: red;
+    background-color: #F3EAC2;
+}
+
+.menu-mobile .mproduct:hover{
+    color: #9AD3BC;
+}
+
+.menu-mobile .mabout:hover{
+    color: #FEA36C;
+}
+
+.menu-mobile .mmembership:hover{
+    color: #EC524B;
+}
+
+.menu-mobile .mhome:hover{
+    color: #062031;
 }
 
 .desktop, .menu-desktop, .menu-mobile {
@@ -103,6 +140,49 @@
     }
 /* END OF Mobile Menu */
 
+/* sticky nav */
+.stickynav{
+width: 100vw;
+height: 25vw;
+position: fixed;
+}
+
+.navlogo img{
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 3vw;
+    position: fixed;
+    right: 35%;
+}
+
+.cart {
+    position: fixed;
+    cursor: pointer;
+    top: 5.5%;
+    right: 85%;
+    width: 40px;
+    height: 45px;
+    transform: translate(-50%, -50%);
+    display: block;
+
+
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  /* end sticky nav */
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
