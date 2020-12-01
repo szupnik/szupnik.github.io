@@ -18,7 +18,7 @@ function closeMobileMenu(){
 
 function desktopMenu() {
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 50 && $(window).width() > 768) {
+        if ($(this).scrollTop() >= 0) {
             $('header.desktop').fadeIn(500);
         } else {
             $('header.desktop').fadeOut(500);
