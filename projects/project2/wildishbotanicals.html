@@ -26,6 +26,14 @@
       <img src="http://placekitten.com/800/1600" alt="">
     </div> -->
     <header class="nav">
+      <div class="cart" > <a href="shoppingcart.html">
+        <img src="images/cart@2x.png" alt="cart">
+          </a>
+          </div>
+
+          <div>
+            <a class="navlogo" href="#home"><img src="images/wildishlogo.png" alt="logo"></a>
+          </div> 
       <div class="icon">
           <div class="hamburger"></div>
       </div>
@@ -34,21 +42,28 @@
           <a class="mabout" href="#about">About</a>
           <a class="mmembership" href="#membership">Membership</a>
           <a class="mhome" href="#home">Home</a>
-      </div>          
+      </div>  
+             
   </header>
-          <div class="cart" > <a href="shoppingcart.html">
-        <img src="images/cart@2x.png" alt="cart">
-          </a>
-          </div>
-          <div>
-            <a class="navlogo" href="#home"><img src="images/wildishlogo.png" alt="logo"></a>
-          </div>
   <header class="desktop">
       <div class="menu-desktop">
-          <a href="#products">Products</a>
-          <a href="#about">About</a>
-          <a href="#membership">Membership</a>
+        <div class="logo">
+          <img src="images/wildishlogo.png" alt= "logo">
+        </div>
+          <a href="#products">PRODUCTS</a><img  onclick="myFunction()" class="dropbtn" src="images/arrow.png" alt="arrow">
+            <div id="#myDropdown" class="dropdown-content">
+              <a href="herb.html">HERBS</a>
+              <a href="home/body.html">HOME/BODY</a>
+              <a href="supplements.html">SUPPLEMENTS</a>
+              <a href="tinctures.html">TINCTURES</a>
+            </div>
+          <a href="#about">ABOUT</a>
+          <a href="#membership">MEMBERSHIP</a>
+          <a href="#home">HOME</a>
       </div>
+    <div class="cart mobilehide">
+    <a href="shoppingcart.html"><img src="images/cart@2x.png" alt= "shoppingcart"></a>
+  </div>
   </header>
     <div id="home" class=homepage>
       <img src="images/helping.png" alt="flower drawing">
@@ -56,12 +71,17 @@
     </div>
     <div id="products" class=products>
       <h2>PRODUCTS</h2>
-      <div class=blobs>
+      <div class="blobs">
         <div class=inblob><a href="herbs.html"><img src="images/herbs.png" alt="herbs"></a></div>
         <div class=inblob><img src="images/homebody.png" alt="home and body" ></div>
         <div class="inblob"><img src="images/supplements.png" alt="supplements" ></div>
         <div class=inblob><img src="images/tinctures.png" alt="tinctures" ></div>
-        
+      </div>
+      <div class="desktopblob mobilehide">
+        <a class=dherbs href="herbs.html"><img src="images/dherbs.png" alt="herbs"></a>
+        <a class=dhomebody href="homebody.html"><img src="images/dhomebody.png" alt="home and body"></a>
+        <a class=dsupplements href="url here"><img src="images/dsupplements.png" alt="supplements"></a>
+        <a class=dtinctures href="url here"><img src="images/dtinctures.png" alt="tinctures"></a>
       </div>
     </div>
     <div id="about" class=about>
@@ -83,7 +103,7 @@
           <br><br>
           <button type="button">JOIN</button>
           <br><br>
-          <p>Receive: <br><br>
+          <p class=lastp>Receive: <br><br>
             15% discount on all Wildish products, including bulk herbs, tinctures and mushroom supplements. <br><br>
             
           Email subscription with sale items, events and inside scoops on the happenings at the shop.</p>
@@ -92,7 +112,7 @@
     </div>
     <footer>
       <div class="footerlogo mobilehide">
-        <p><img src="http://placekitten.com/g/150/150" alt="kitten"></p>
+        <p><img src="images/logowhite.png" alt="kitten"></p>
       </div>
       <div class=footerinfo>
         <h3>LOCATION</h3>

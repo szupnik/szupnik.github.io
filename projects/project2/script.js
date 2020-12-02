@@ -31,6 +31,30 @@ $(toggleIcon);
 $(closeMobileMenu);
 $(desktopMenu);
 
+//dropdown menu
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+  //END dropdown menu
+
+
 //scrolling for menu
 
 // Select all links with hashes
@@ -72,10 +96,14 @@ $('a[href*="#"]')
 
 //endauto scroll
 
+
 //start sticky nav
 
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
+
+//IMAGE HOVER
+
 
 //quantity buttons
 
