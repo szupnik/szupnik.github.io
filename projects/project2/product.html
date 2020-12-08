@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/hqe3yto.css">
-    <title>Wildish Botanical Product</title>
+    <title>Wildish Botanical Alfalfa</title>
 </head>
 <header class="nav">
+  <div class="cart" > <a href="shoppingcart.html">
+    <img src="images/cart@2x.png" alt="cart">
+      </a>
+      </div>
+
+      <div>
+        <a class="navlogo" href="#home"><img src="images/wildishlogo.png" alt="logo"></a>
+      </div> 
   <div class="icon">
       <div class="hamburger"></div>
   </div>
@@ -20,19 +28,31 @@
 </header>
 <header class="desktop">
   <div class="menu-desktop">
-      <a href="wildishbotanicals.html#products">Products</a>
-      <a href="wildishbotanicals.html#about">About</a>
-      <a href="wildishbotanicals.html#membership">Membership</a>
-      <a href="wildishbotanicals.html">Home</a>
+    <div class="logo">
+      <img src="images/wildishlogo.png" alt= "logo">
+    </div>
+      <a href="#products">PRODUCTS</a><img  onclick="myFunction()" class="dropbtn" src="images/arrow.png" alt="arrow">
+        <div id="#myDropdown" class="dropdown-content">
+          <a href="herb.html">HERBS</a>
+          <a href="home/body.html">HOME/BODY</a>
+          <a href="supplements.html">SUPPLEMENTS</a>
+          <a href="tinctures.html">TINCTURES</a>
+        </div>
+      <a href="wildishbotanicals.html/#about">ABOUT</a>
+      <a href="wildishbotanicals.html/#membership">MEMBERSHIP</a>
+      <a href="wildishbotanicals.html/#home">HOME</a>
   </div>
+<div class="cart mobilehide">
+<a href="shoppingcart.html"><img src="images/cart@2x.png" alt= "shoppingcart"></a>
+</div>
 </header>          
 <body>
   <div class=productpage>
-    <img class=bigproduct src="http://placekitten.com/300/300" alt="product">
+    <img class=bigproduct src="images/alfalfa.jpg" alt="alfalfa">
 <div class=productinfo>
-<h2 class=price>PRODUCT</h2>
+<h2 class=price>Alfalfa</h2>
 <div class=price>
-    <h5>$x.xx</h5>
+    <h5>$20.00</h5>
         <div class="quantity buttons_added">
             <input id="minus" type="button" class="minus" value="-">
             <input id="theInput" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
@@ -53,7 +73,7 @@
 
     <footer>
       <div class="footerlogo mobilehide">
-          <p><img src="http://placekitten.com/g/150/150" alt="kitten"></p>
+          <p><img src="images/logowhite.png" alt="logo"></p>
         </div>
     <div class=footerinfo>
         <h3>LOCATION</h3>

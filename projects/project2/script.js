@@ -1,6 +1,5 @@
 'use strict'
 
-
 function toggleIcon() {
     $('.icon').on('click', function(){
         $('.icon').toggleClass('active');
@@ -101,9 +100,6 @@ $('a[href*="#"]')
 
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
-
-//IMAGE HOVER
-
 
 //quantity buttons
 

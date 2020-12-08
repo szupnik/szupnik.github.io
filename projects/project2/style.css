@@ -194,12 +194,15 @@ body {
 }
 img { width: 100%; }
 svg { width: 100%; }
-.roots {
+.roots img {
     position: absolute;
     top: 0;
     left: 100px;
     right:100px;
     z-index:-1;
+    padding-top: 60px;
+    overflow: hidden;
+    margin-left: -110px;
 }
 
 .mobilehide {
@@ -238,6 +241,7 @@ font-size: 17px;
 .homepage {
     display: flex;
     z-index: 1;
+    justify-content: flex-end;
 }
 
 .homepage img {
@@ -248,10 +252,11 @@ font-size: 17px;
 
 .homelogo {
     font-size: 60px;
-    margin-left: 5%;
+    margin-right: 5%;
+    margin-left: 20%;
+    padding-bottom: 100px;
     padding-top: 250px;
-    padding-bottom: 50px;
-    line-height: 35px;
+    line-height: 33px;
 }
 
 .botanicals {
@@ -440,7 +445,7 @@ h5 {
 .bigproduct{
     text-align: center;
     max-width: 80vw;
-    height: auto;
+    height: 100%;
     border-radius: 70px;
     display: block;
     margin: 0 auto;
@@ -542,6 +547,9 @@ input::-webkit-inner-spin-button {
 /* end selected product page */
 
 /* start shopping cart */
+.shop {
+    padding-top: 100px;
+}
 
 .sproduct {
     display: flex;
@@ -567,6 +575,9 @@ input::-webkit-inner-spin-button {
 @media only screen and (min-width: 768px) {
     .desktophide {
         display: none;
+    }
+    .mobilehide {
+        display: block;
     }
 
 
@@ -692,12 +703,19 @@ input::-webkit-inner-spin-button {
 
 @media screen and (min-width: 1024px) {
     
+   
     footer {
         flex-direction: row;
     }
 .mobilehide {
         display: block;
     }
+
+.roots img {
+    width: 80vw;
+    padding-left: 60px;
+}
+
     h2 {
         font-size: 80px;
     }
@@ -734,6 +752,11 @@ input::-webkit-inner-spin-button {
     .inblob {
         display: none;
     }
+
+    .products {
+        padding-top: 15%;
+    }
+
 .products h2 {
     margin-bottom: -100px;
     margin-left: 30px;
@@ -859,9 +882,39 @@ input::-webkit-inner-spin-button {
 
     .productpage {
         display: flex;
+        padding-top: 100px;
         
     }
 
+    .productinfo {
+        width: 50vw;
+    }
+
+    .bigproduct {
+        width: 50vw;
+        padding: 30px;
+        margin-top:-10px;
+    }
+
+    img .bigproduct {
+        width: 300px;
+    }
+
+    h2 .price {
+        font-size: 20px;
+    }
+
+    .addtocart {
+        width: 26vw;
+    
+    }
+
+   .shop {
+        padding-top: 100px;
+    }
+.sproduct {
+    justify-content: space-around;
+}
     .footerinfo{
         width: 150 px;
         padding-right: 20px;
