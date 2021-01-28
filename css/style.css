@@ -9,14 +9,18 @@ body {
   font-size: 20px;
 }
 
-h1,
-h2,
-h3 {
+h1 {
   font-size: 60px;
   font-family: 'Space Mono', "cursive";
   font-style:italic;
   
 }
+
+h2 {
+  font-size: 45px;
+  font-style:italic
+}
+
 main,
 header h1,
 nav div {
@@ -35,7 +39,14 @@ nav a:hover {
   color: #333;
 }
 nav {
-  background-color: #ccc;
+  background-color: lightblue;
   padding: 12px;
 }
 
+@media screen and (min-width: 1024px) {
+  .hold {
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 
+}
