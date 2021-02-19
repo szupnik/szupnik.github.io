@@ -2,6 +2,14 @@
     box-sizing: border-box;
   }
   
+.hidden {
+  display:none;
+}
+
+.squirrel{
+  width: 20vw;
+}
+
   body {
     margin: 0;
     background-color: #0d065c;
@@ -9,7 +17,7 @@
   }
   
   p {
-    color: #fff;
+    color: black;
   }
   .protagonist {
     padding: 120px;
@@ -57,20 +65,24 @@
     left: 0;
     right: 0;
   }
+
+  .shrink{
+    width:30vw;
+  }
   .one {
-    background: #514ce6;
+    background: white;
   }
   .two {
-    background: #3a37a6;
+    background: white;
   }
   .three {
-    background: #2a2878;
+    background: white;
   }
   .four {
-    background: #1f1d57;
+    background:white;
   }
   .five {
-    background: #111030;
+    background: white;
   }
   .center {
     text-align: center;

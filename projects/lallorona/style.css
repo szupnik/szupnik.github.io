@@ -1,0 +1,160 @@
+p {
+    width: 20em;
+}
+
+/* START SCENE 1 */
+
+.moon {
+    width: 25vw;
+    padding-top: 15vh;
+    padding-left: 10vw;
+}
+
+.stars {
+    margin-top: -100vh;
+    width: 70vw;
+    height: auto;
+    margin-left: 30vw;
+}
+
+.forest {
+    margin-top: -300px;
+}
+
+.tree1 {
+    position: absolute;
+    width: 801.16px;
+height: 740px;
+    margin-top: -50px;
+    margin-left: 600px;
+
+}
+    
+    
+ .tree2{  
+    /* tree1 4 */
+    
+    position: absolute;
+    width: 801.16px;
+height: 740px;
+    margin-top: -100px;
+    margin-left: 250px;
+}   
+
+  .tree3 {
+    
+    /* tree1 5 */
+    
+    position: absolute;
+    width: 900.06px;
+    height: 1004px;
+    margin-left: -300px;
+    top: 400px;
+} 
+
+.river {
+    position: absolute;
+width: 1691px;
+height: 640px;
+left: -161px;
+top: 950px;
+}
+
+.sitting {
+    position: absolute;
+width: 123px;
+height: 262px;
+left: 784px;
+top: 910px;
+}
+
+.line1 {
+    position: absolute;
+    top: 1400px;
+    width: 20em;
+    left: 100px;
+}
+
+/* END SCENE 1 */
+
+/* START SCENE 2 */
+
+.reach {
+    position: absolute;
+    width: auto;
+height: 70vh;
+left: 180px;
+top: 1800px;
+transform: rotate(15deg);
+}
+
+.back {
+    position: absolute;
+    width: auto;
+    height: 95vh;
+left: 547px;
+top: 1605px;
+}
+
+.line2{ 
+    position: absolute;
+    width: 441px;
+    height: 66px;
+    left: 300px;
+    top: 1700px;
+}
+
+/* END SCENE 2 */
+
+/* START SCENE 3*/
+
+.crying {
+    position: absolute;
+    width: auto;
+    height: 100vh;
+
+    top: 2500px;
+}
+
+.line3 {
+    position: absolute;
+    top: 2700px;
+    left: 60vw;
+}
+
+/* END SCENE 3 */
+
+/* START SCENE 4 */
+
+.river2 {
+    position: absolute;
+width: 1691px;
+height: 640px;
+left: -161px;
+    top: 3200px; 
+}
+
+.line4 {
+    position: absolute;
+    top: 3650px;
+    left: 10vw;
+}
+
+/* END SCENE 4*/
+
+/* START SCENE 5 */
+
+.grabbing {
+    position: absolute;
+    top: 4000px;
+    width: 900px;
+    height: auto;
+    left: 15vw;
+    padding-bottom: 5vh;
+}
+
+.line5 {
+    position: absolute;
+    top: 4450px;
+    left: 55vw;
+}

@@ -8,33 +8,34 @@
   </head>
   <body id="pane">
     <section class="start">
-      <img class="protagonist" src="http://placekitten.com/400/400" />
+      <img class="protagonist" src="images/walking.gif" />
     </section>
     <main>
       <div class="wrapper">
         <section class="slide one">
           <article class="vh-center">
-            <p class="center">First page text!</p>
+            <p class="center">Let's go for a walk.</p>
           </article>
         </section>
         <section class="slide two">
           <article class="vh-center">
-            <p class="center">Second page text!</p>
+            <p class="center hidden">Oh look a squirrel!</p>
+            <img class="squirrel hidden" src="images/squirrel.jpg" alt="squirrel">
           </article>
         </section>
         <section class="slide three">
           <article class="vh-center">
-            <p class="center">Third Page Text!</p>
+            <p class="center">Whoops, better turn around so I don't fall.</p>
           </article>
         </section>
         <section class="slide four">
           <article class="vh-center">
-            <p class="center">Fourth page text!</p>
+            <p class="center">Why am I tiny?</p>
           </article>
         </section>
         <section class="slide five">
           <article class="vh-center">
-            <p class="center">Fifth page text!</p>
+            <p class="center">Well that's better. I think we'll be done with the walk.</p>
           </article>
         </section>
       </div>
@@ -53,9 +54,44 @@
         { offset: "0%", horizontal: true }
       )
 
+      $two.waypoint(
+        function (direction) {
+          $("p").removeClass("hidden")
+        },
+        { offset: "0%", horizontal: true }
+      )
+
+      $two.waypoint(
+        function (direction) {
+          $(".squirrel").removeClass("hidden")
+        },
+        { offset: "0%", horizontal: true }
+      )
+
+      $(".three").waypoint(
+        function () {
+          $(".protagonist").removeClass("flip")
+        },
+        { offset: "50%", horizontal: true }
+      )
+
       $(".three").waypoint(
         function () {
           $(".protagonist").css("filter", "hue-rotate(90deg)")
+        },
+        { offset: "50%", horizontal: true }
+      )
+
+      $(".four").waypoint(
+        function () {
+          $(".protagonist").addClass("shrink")
+        },
+        { offset: "50%", horizontal: true }
+      )
+
+      $(".five").waypoint(
+        function () {
+          $(".protagonist").removeClass("shrink")
         },
         { offset: "50%", horizontal: true }
       )
