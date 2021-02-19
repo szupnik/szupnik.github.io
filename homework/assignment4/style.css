@@ -12,7 +12,7 @@
 
   body {
     margin: 0;
-    background-color: #0d065c;
+    background-color: white
     position: relative;
   }
   
@@ -68,21 +68,6 @@
 
   .shrink{
     width:30vw;
-  }
-  .one {
-    background: white;
-  }
-  .two {
-    background: white;
-  }
-  .three {
-    background: white;
-  }
-  .four {
-    background:white;
-  }
-  .five {
-    background: white;
   }
   .center {
     text-align: center;
