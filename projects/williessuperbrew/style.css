@@ -172,6 +172,37 @@ ol{
     padding-top: 20vh;
 }
 
+.cans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cans img {
+    width: 30%;
+    height: 30%;
+    padding: 7px;
+}
+
+
+.cans img:nth-child(1) {
+    transform: rotate(-23deg)
+}
+
+.cans img:nth-child(2) {
+    transform: rotate(40deg);
+    padding-top: 80px;
+}
+
+.cans img:nth-child(3) {
+    transform: rotate(-10deg);
+    margin-top: -50px;
+}
+
+.cans img:nth-child(4){
+    transform: rotate(-25deg);
+}
+
 .mission {
     margin-top: -100vh;
     padding: 10px;
@@ -312,6 +343,39 @@ footer img {
            margin-top: -45%;
        }
 
+       .cans{
+        flex-wrap:nowrap;
+        flex-direction:row;
+        justify-content: space-around;
+        padding-left: 30vw;
+        padding-top: 10vh;
+        padding-bottom: 30px;
+       }
+
+       .cans img{
+width: 55%;
+height: 55%;
+}
+
+.cans img:nth-child(1){
+    padding-left: 80px;
+}
+
+.cans img:nth-child(2){
+    margin-left: 30px;
+    margin-top: 60px;
+    transform: rotate(15deg);
+    padding-left: 0px;
+}
+
+.cans img:nth-child(3){
+    margin-top: -10px;
+}
+
+.cans img:nth-child(4){
+    padding-left: 50px;
+    margin-top: 30px;
+}
 
        img .mobilehide .orang{
         width:100vw;
