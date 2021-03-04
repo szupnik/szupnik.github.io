@@ -6,6 +6,14 @@ body {
     display:none;
 }
 
+.desktop a {
+    display: none;
+}
+
+.mobilehide {
+    display:none;
+}
+
 /* START of Mobile Menu */
 .nav, .desktop {
     display: block;
@@ -216,3 +224,160 @@ footer img {
 .cans {
     width:370px;
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .desktophide {
+        display: none;
+    }
+    .mobilehide {
+        display: block;
+        width: 100vw;
+    }
+
+    .desktop a {
+        display: block;
+    }
+
+
+    /* START of desktop menu for 768 media query */
+   
+    .menu-desktop {
+        width: 100%;
+        display: block;
+        padding: 0;
+        line-height: 50px;
+        justify-content: space-evenly;
+        flex-direction: row;
+        text-align: right;
+        position: absolute;
+        top: 0;
+        height: 120px;
+        background-color: #FCF8F2;
+        z-index: -1;
+    }
+
+    .menu-desktop a {
+        display: inline-flex;
+        height: 0;
+        line-height: 50px;
+        text-decoration: none;
+        color: #062031;
+        justify-content: space-evenly;
+        font-family: turnip, serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 25px;
+        padding-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        position: relative;
+        z-index: 10;
+
+    }
+
+    .menu-desktop a:hover {
+        font-weight: 400;
+        color: #062031;
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        display: block;
+    }
+    .desktop img {
+        width: 250px;
+        margin: auto;
+        padding-top: 30px;
+        margin-bottom: -30px;
+        padding-left: 30px;
+        position:relative;
+
+    }
+
+    header.nav, .menu-mobile {
+        display: none;
+    }
+       /* END of desktop menu for 768 media query */
+
+       .firstimg {
+           margin-top:-80px;
+       }
+
+       h1 {
+           font-size: 100px;
+           margin-left: 27vw;
+           margin-top: -45%;
+       }
+
+
+       img .mobilehide .orang{
+        width:100vw;
+       }
+
+       .mission {
+           padding-left: 5vw;
+           padding-top: 80px;
+       }
+
+h2 {
+    font-size: 65px;
+}
+
+h3, p, ol, li{
+    font-size: 20px;
+    width: 30em;
+    
+}
+
+h3{
+    margin-top: -55px;
+}
+
+.abovestores {
+    margin-top: 0;
+    text-align: center;
+    padding-top: 25%;
+}
+
+.stores {
+  display: flex;  
+  flex-wrap: nowrap;
+  padding-bottom: 20vh;
+}
+
+.stores img {
+    width: 15%;
+    height: 15%;
+}
+
+.thestory {
+    display:flex;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+.thestory img {
+    order: -1;
+    height: 100vh;
+    width: auto;
+}
+
+footer {
+    justify-content: flex-start;
+}
+
+footer img{
+    width: 5vw;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer p {
+    margin-left: 50px;
+}
+
+}
+ 
