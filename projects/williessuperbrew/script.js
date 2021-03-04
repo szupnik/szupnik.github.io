@@ -94,3 +94,33 @@ $('a[href*="#"]')
   });
 
 //endauto scroll
+
+//start can menus
+
+$("#lime-toggle").click(function() {
+  $("#lime-menu").fadeToggle(300);
+});
+
+$("#blue-toggle").click(function() {
+  $("#blue-menu").fadeToggle(300);
+});
+
+$("#mango-toggle").click(function() {
+  $("#mango-menu").fadeToggle(300);
+});
+
+$("#pom-toggle").click(function() {
+  $("#pom-menu").fadeToggle(300);
+});
+
+//end can menus
+
+//start scroll magic
+
+
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({
+  triggerElement:'.cans'
+})
+.setClassToggle('.can-group','slide-in')
+.addTo(controller);
