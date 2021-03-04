@@ -394,42 +394,49 @@ ol {
 }
 /* END POPUP */
 
-.slide-right {
-  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
 
-/**
- * ----------------------------------------
- * animation slide-right
- * ----------------------------------------
- */
-@-webkit-keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-}
-@keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-}
 
 .mission {
   margin-top: -100vh;
   padding: 10px;
   padding-left: 0px;
+  opacity: 0;
 }
+
+.slide-right {
+    -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    opacity: 1;
+    transition: opacity 1s;
+
+    
+  }
+  
+  /**
+   * ----------------------------------------
+   * animation slide-right
+   * ----------------------------------------
+   */
+  @-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+    }
+  }
 
 .abovestores {
   padding-top: 58vh;
@@ -700,7 +707,7 @@ footer img {
   }
 
   .cans img {
-    width: 70%;
+    width: 85%;
     height: auto;
   }
 

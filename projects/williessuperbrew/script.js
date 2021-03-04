@@ -135,7 +135,22 @@ function canScroll() {
     //   colorStart: "#75C695"
     // }) // this requires a plugin
     .addTo(controller)
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".mission"
+  })
+    .setClassToggle(".mission", "slide-right")
+    .addTo(controller)
+
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".abovestores"
+  })
+    .setClassToggle(".stores", "bounce-in-top")
+    .addTo(controller)
+
 }
+
 //when the page loads call toggleIcon;
 $(toggleIcon)
 $(closeMobileMenu)
