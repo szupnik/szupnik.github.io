@@ -820,11 +820,19 @@ footer img {
     padding-top: 5%;
   }
 
-  .thestory img {
+  .thestory img{
     order: -1;
     height: 100vh;
     width: auto;
   }
+
+.limedeco{
+    margin-top:-400px;
+    position: absolute;
+    transform: rotate(-70deg);
+    z-index: 1;
+    height: 150px;
+}
 
   footer {
     justify-content: flex-start;
