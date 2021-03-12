@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zsu5qvz.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
     <title>La Llorona</title>
 </head>
 <body>
    
    <div class=scene1>
+       <p class=title>La Llorona</p>
     <img class="moon" src="images/moon.png" alt="moon"> 
     <img class=stars src="images/stars.png" alt="stars">
+
+    <img id=draggable class="bush" src="images/bush.png" alt="bush">
 
     <img class=tree1 src="images/tree1.png" alt="">
     <img class=tree2 src="images/tree1.png" alt="">
@@ -18,35 +23,41 @@
 
     <img class=river src="images/longriver.png" alt="river">
     
-    <img class=sitting src="images/wholebod.png" alt="womansitting">
+    <a href="#s2"><img class=sitting src="images/wholebod.png" alt="womansitting"></a>
 
     <p class=line1>Hmmm... that's odd that this woman is out here in the woods alone at night. Maybe I should see if she's ok.</p>
 </div>
 
 <div class=scene2>
-    <img class=reach src="images/hand.png" alt="reaching hand">
-    <img class=back src="images/ladyback.png" alt="back of woman">
-    <p class=line2>Are you alright?</p>
+    <img class="reach"  src="images/hand.png" alt="reaching hand">
+   <a href="#s3"> <img class="back " src="images/ladyback.png" alt="back of woman"></a>
+    <p id=s2 class=line2>Are you alright?</p>
 
 </div>
 
-<div class=scene3>
-<img class=crying src="images/framedcrying.png" alt="woman crying">
-<p class=line3>My children. My children. I lost them in the river and I cannot find them. I keep searching and searching and they are nowhere to be found.</p>
+<div  class=scene3>
+<a href="#s4"><img class=crying src="images/framedcrying.png" alt="woman crying"></a>
+<p id=s3 class=line3>My children. My children. I lost them in the river and I cannot find them. I keep searching and searching and they are nowhere to be found.</p>
 
 </div>
 
 <div class=scene4>
-<img class=river2 src="images/longriver.png" alt="river">
-<p class=line4>here is the whole story</p>
+<a href="#s5"><img class=river2 src="images/movingriver.gif" alt="river"></a>
+<p id=s4 class=line4>My husband left me years ago to be with a more beautiful woman. He left me alone with our children. In my rage I drowned them and then drowned myself. But I have been cursed with roaming this plane until I can find my children.</p>
 
 </div>
 
 <div class=scene5>
-    <img class=grabbing src="images/grabby.png" alt="hands grabbing">
-    <p class=line5>Now you will have to find them.</p>
+    <img class="grabbing " src="images/grabby.png" alt="hands grabbing">
+    <p id=s5 class=line5>Now you will have to find them.</p>
 
 </div>
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
